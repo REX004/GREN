@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigaton"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.testchamp.session5.homepac.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/wallet"
+        android:name="com.example.testchamp.session4.walletpac.Wallet"
+        android:label="fragment_wallet"
+        tools:layout="@layout/fragment_wallet" />
+    <fragment
+        android:id="@+id/track"
+        android:name="com.example.testchamp.session4.trackpac.Track"
+        android:label="fragment_track"
+        tools:layout="@layout/fragment_track" />
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.testchamp.session3.profilepac.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profile_to_addPaymentMethod"
+            app:destination="@id/addPaymentMethod" />
+        <action
+            android:id="@+id/action_profile_to_notfication"
+            app:destination="@id/notfication" />
+        <action
+            android:id="@+id/action_profile_to_sendAPacage"
+            app:destination="@id/sendAPacage" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPaymentMethod"
+        android:name="com.example.testchamp.session3.profilepac.AddPaymentMethod"
+        android:label="home_add_payment_method"
+        tools:layout="@layout/home_add_payment_method" />
+    <fragment
+        android:id="@+id/notfication"
+        android:name="com.example.testchamp.session3.profilepac.Notfication"
+        android:label="home_notfication"
+        tools:layout="@layout/home_notfication" />
+    <fragment
+        android:id="@+id/sendAPacage"
+        android:name="com.example.testchamp.session3.profilepac.SendAPacage"
+        android:label="home_send_a_pacage"
+        tools:layout="@layout/home_send_a_pacage" />
+</navigation>

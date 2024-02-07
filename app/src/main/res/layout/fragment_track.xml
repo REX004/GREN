@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".session4.trackpac.Track">
+
+    <TextView
+        android:id="@+id/courier_requsted2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Courier requested"
+        android:textColor="@color/grey2"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/logic_transfer"
+        app:layout_constraintTop_toBottomOf="@+id/data_1" />
+
+    <TextView
+        android:id="@+id/data_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="July 7 2022"
+        android:textColor="#EC8000"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/courier_requsted2"
+        app:layout_constraintTop_toBottomOf="@+id/courier_requsted2" />
+
+    <TextView
+        android:id="@+id/time_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="08:00am"
+        android:textColor="#EC8000"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/data_"
+        app:layout_constraintStart_toEndOf="@+id/data_1"
+        app:layout_constraintTop_toTopOf="@+id/data_" />
+
+    <com.yandex.mapkit.mapview.MapView
+        android:id="@+id/mapView"
+        android:layout_width="0dp"
+        android:layout_height="320dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tracking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="360dp"
+        android:text="Tracking Number"
+        android:textColor="@color/grey"
+        android:textSize="16sp"
+        android:fontFamily="@font/roboto_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/number_track"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="R-7458-4567-4434-5854"
+        android:textColor="@color/blue_1"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/number_zakaz"
+        app:layout_constraintStart_toStartOf="@+id/tracking"
+        app:layout_constraintTop_toBottomOf="@+id/tracking" />
+
+    <TextView
+        android:id="@+id/pacage_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Package Status"
+        android:textColor="@color/grey2"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/tracking"
+        app:layout_constraintTop_toBottomOf="@+id/number_track" />
+
+    <ImageView
+        android:id="@+id/logic_transfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/line"
+        app:layout_constraintStart_toStartOf="@+id/tracking"
+        app:layout_constraintTop_toBottomOf="@+id/pacage_status" />
+
+    <TextView
+        android:id="@+id/courier_requsted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="-3dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Courier requested"
+        android:textColor="@color/grey2"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/logic_transfer"
+        app:layout_constraintTop_toTopOf="@+id/logic_transfer" />
+
+    <TextView
+        android:id="@+id/data_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_regular"
+        android:text="July 7 2022"
+        android:textColor="#EC8000"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/courier_requsted"
+        app:layout_constraintTop_toBottomOf="@+id/courier_requsted" />
+
+    <TextView
+        android:id="@+id/time_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="08:00am"
+        android:textColor="#EC8000"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/data_1"
+        app:layout_constraintTop_toTopOf="@+id/data_1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
