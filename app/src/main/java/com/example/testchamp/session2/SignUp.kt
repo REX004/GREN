@@ -31,6 +31,7 @@ class SignUp : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        //Helli
 
         return inflater.inflate(R.layout.sign_up, container, false)
     }

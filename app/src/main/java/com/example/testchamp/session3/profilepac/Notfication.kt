@@ -26,6 +26,7 @@ class Notfication : Fragment() {
         val controller = findNavController()
         bF1.setOnClickListener {
             controller.navigate(R.id.profile) }
+        //Helli
 
 
     }

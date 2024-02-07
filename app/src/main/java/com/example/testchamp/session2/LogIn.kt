@@ -34,6 +34,7 @@ class LogIn : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.log_in, container, false)
     }
+    //Helli
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
