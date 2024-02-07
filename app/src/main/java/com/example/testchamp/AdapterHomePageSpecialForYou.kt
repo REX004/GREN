@@ -10,4 +10,5 @@ class AdapterHomePageSpecialForYou(private val names: List<String>) {
     class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val image: ImageView = itemView.findViewById(R.id.imageView16)
     }
+    //Helli
 }
